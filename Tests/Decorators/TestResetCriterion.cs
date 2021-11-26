@@ -23,7 +23,7 @@ public class TestResetCriterion : TestBase{
 
     #if !AL_OPTIMIZE
     [Test] public void Check_3arg(){
-        x.Check(null, stack, ("path", "method", 0));
+        x.Check(null, stack, new CallInfo("path", "method", 0));
         o(x.context, null);
         o(x.hold, null);
     }

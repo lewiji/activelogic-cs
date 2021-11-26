@@ -15,7 +15,7 @@ public class TestCallInfo : TestBase{
 
     CallInfo x, y;
 
-    [SetUp] public void Setup() => y = ("n/a", "Moo", 17);
+    [SetUp] public void Setup() => y = new CallInfo("n/a", "Moo", 17);
 
     [Test] public void Default(){
         o( x.path  , null );

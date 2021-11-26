@@ -12,7 +12,7 @@ public readonly struct CallInfo{
     internal readonly string member;
     internal readonly int line;
 
-    CallInfo(string p, string m, int l){
+    public CallInfo(string p, string m, int l){
         path   = p;
         member = m;
         line   = l;

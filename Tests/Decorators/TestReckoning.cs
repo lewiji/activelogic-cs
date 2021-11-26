@@ -23,7 +23,7 @@ public class TestReckoning : TestBase{
     #if !AL_OPTIMIZE
     [Test] public void Constructor_withCallInfo(
                                       [Values(true, false)] bool arg){
-        x = new Reckoning(arg, stack, ("path", "member", -1));
+        x = new Reckoning(arg, stack, new CallInfo("path", "member", -1));
         o(x.context != null, arg);
     }
     #endif
